@@ -1,16 +1,17 @@
-# Safe Dynamic Array Leaderboard
+# Campus Quest Leaderboard
 
-A console-based C++ leaderboard for event organizers. Each team has an ID, name,
-score, and number of completed missions. The program uses a **safe dynamic array**
-(class `Team` stored in a dynamically-resized `Leaderboard` array) with guaranteed
-bounds checking, deep-copy semantics (Rule of Five), and full input validation.
+A console-based C++ leaderboard for campus event organizers. Each team has an ID,
+name, score, and number of completed missions. The program uses a **safe dynamic
+array** (class `Team` stored in a dynamically-resized `Leaderboard` array) with
+guaranteed bounds checking, deep-copy semantics (Rule of Five), and full input
+validation.
 
 ## Features
 
-- Add / remove / update teams
-- Sort by score or by completed missions (descending)
-- Search teams by ID
-- Save to and load from a text file
+- Register / find / remove teams
+- Record mission points
+- Show the leaderboard sorted by score (descending)
+- Save to a text file on exit
 - Duplicate-team-ID rejection
 - Dynamic array growth with no fixed upper limit
 - Memory-safe: deep copy, move semantics, proper cleanup, `nothrow` allocation
@@ -32,19 +33,18 @@ g++ -Wall -Wextra -o leaderboard.exe leaderboard.cpp
 ## Menu
 
 ```
- 1. Add Team
- 2. Record Mission (update score + missions)
- 3. Delete Team
- 4. Sort by Score & Display
- 5. Sort by Missions & Display
- 6. Display Unsorted
- 7. Search by ID
- 8. Save to File
- 9. Load from File
-10. Exit
+=== CAMPUS QUEST LEADERBOARD ===
+1. Register a team
+2. Record mission points
+3. Find a team
+4. Remove a team
+5. Show leaderboard
+6. Save and exit
+Choose:
 ```
 
-Enter a number, follow the prompts, and press Enter after each input.
+Enter a number, follow the prompts, and press Enter after each input. Option 6
+asks for a filename, saves the data, then exits.
 
 ## File Format
 
