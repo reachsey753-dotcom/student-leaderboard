@@ -1,5 +1,5 @@
-#ifndef FILE.H
-#define FILE .H
+#ifndef FILE_H
+#define FILE_H
 
 #define MAX_NAME 50
 
