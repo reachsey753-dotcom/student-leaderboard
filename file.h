@@ -11,7 +11,7 @@ typedef struct
     int missions;
 } Team;
 
-extern Team *team;
+extern Team *teams;
 extern int size;
 extern int capacity;
 
@@ -21,7 +21,7 @@ int addTeam(int id, const char *name, int score, int missions);
 int recordMission(int id, int points);
 int deleteTeam(int id);
 void sortLeaderboard();
-void displayTeam();
+void displayTeams();
 void loadTeams(const char *filename);
 int saveTeams(const char *filename);
 void cleanupTeams(void);
