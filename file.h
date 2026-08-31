@@ -15,7 +15,7 @@ extern Team *team;
 extern int size;
 extern int capacity;
 
-int findTeambyIndex(int id);
+int findTeamIndex(int id);
 int ensuredCapacity(int required);
 int addTeam(int id, const char *name, int score, int missions);
 int recordMission(int id, int points);
